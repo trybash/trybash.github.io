@@ -1,49 +1,101 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Gregory Igelmund">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
 
-    <title>TryBash github page</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>tryBash - Learn the Command Line the easy way!</title>
+  <meta name="description" content="Command Line Tutorial">
+  <meta name="author" content="TryBash Team">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+</head>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  </head>
-  <body>
-    <div id="header" class="z-depth-2">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 valign-wrapper">
-            <img class="valign" src="https://avatars3.githubusercontent.com/u/18438430?v=3&s=200" width=200 height=200 alt="TryBash Logo" />
-            <div class="inline-block valign">
-              <h1>TryBash</h1>
-              <blockquote>Learn Bash in the browser</blockquote>
-            </div>
-          </div>
+<body>
+  <div class="container-fluid content">
+    <header class="row">
+      <div class="col-sm-3 col-sm-offset-2 header">
+        <a href="index.html">
+          <p class="logo angle">
+            >
+          </p>
+          <p class="logo try">
+            Try
+          </p>
+          <p class="logo bash">
+            Bash
+          </p>
+        </a>
+      </div>
+    </header>
+    <div class="row cover">
+      <div class="col-sm-6 col-sm-offset-3 title">
+        <h1>Learn Bash<br />the easy way</h1>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2 intro">
+        <p>
+          Take our fun, interactive course and learn the basics of the UNIX Shell in just a few minutes. Jump in right away:
+        </p>
+        <p class="gs"><button class="get-started">Get Started!</button></p>
+        <img class="terminal" src="img/terminal.png" alt="terminal"/>
+      </div>
+    </div>
+    <div class="row cheatsheet">
+      <div class="col-sm-8 col-sm-offset-2 cheatsheet">
+        <h3>Cheat Sheet</h3>
+        <p>The shell is dark and full of terrors. Take this:</p>
+        <div class="col-sm-6">
+          <p class="command">ls</p>
+          <p class="command-desc">List all files and folders in the current directory</p>
+          <p class="command">ls foldername</p>
+          <p class="command-desc">List all files and folders in the folder named foldername</p>
+          <p class="command">ls -l</p>
+          <p class="command-desc">List all files and folders with addictional information</p>
+          <p class="command">ls -a</p>
+          <p class="command-desc">List even hidden files or folders!</p>
+          <p class="command">ls -R</p>
+          <p class="command-desc">List files,folders and all the subfolders</p>
+        </div>
+        <div class="col-sm-6">
+          <p class="command">mkdir name</p>
+          <p class="command-desc">Create a folder named name</p>
+          <p class="command">rm filename</p>
+          <p class="command-desc">Remove the file named filename</p>
+          <p class="command">and so on</p>
+          <p class="command-desc">Add more commads to Cheat Sheet</p>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <p class="flow-text">TryBash is a students project at the University of Applied Sciences of Berlin (<a href="https://www.htw-berlin.de/">HTW-Berlin</a>).</p>
-        <p class="flow-text">If you have any questions do not hesitate to get in touch via <a href="mailto:igelmund@htw-berlin.de">E-Mail</a> or have a look at our <a href="https://github.com/trybash">github account</a>.</p>
+
+      <div class="col-sm-8 col-sm-offset-2 ">
+        <p>You can also download this as a PDF in different languages:</p>
+        <button class="download">Download in german</button>
+        <button class="download">Download in english</button>
       </div>
     </div>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-  </body>
+    <div class="row about">
+      <div class="col-sm-8 col-sm-offset-2">
+      <h2>About TryBash:</h2>
+      <p class="desc">TryBash was initially created as a student project at the HTW Berlin. Since then, it has become a global phenomenon, with millions of people participating in the fun, interactive course. The team has since bought several mansions in Miami.</p>
+      <br />
+      <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <footer class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+      <a href="impressum.html">Impressum & Datenschutzerklärung</a>
+      <p class="angleSmall">
+        >
+      </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+</body>
 </html>

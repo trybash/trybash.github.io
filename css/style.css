@@ -1,0 +1,168 @@
+@font-face{
+  font-family: "Fira Sans";
+  src: url("../fonts/FiraSans-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
+}
+
+body{
+  font-family: Fira Sans;
+  background-color: white;
+  height: 100%;
+}
+
+header, footer{
+  background-color: black;
+}
+
+.logo{
+  float: left;
+  color: #78b722;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.angle{
+  font-size: 60px;
+  margin:0;
+  padding: 0;
+}
+
+.try, .bash{
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.bash{
+  font-weight: bold;
+}
+
+.cover{
+  margin-bottom: -200px;
+}
+
+.content{
+    background: #e9e2e0;
+    background-image: url("../img/titelbild-example.jpg");
+    background-height: 100%;
+    background-repeat: no-repeat;
+}
+
+.title{
+  text-align: center;
+  color:white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.title h1{
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 1px 1px #333333;
+  line-height: 60%;
+  line-height: 1;
+}
+
+.intro{
+  background-color: white;
+  border-radius: 2px;
+}
+
+.terminal{
+  width: 100%;
+  margin-top: -200px;
+  padding-bottom: 15px;
+}
+
+.gs{
+  margin-top: 100px;
+}
+
+.intro p{
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.get-started{
+  position: relative;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  font-size: 20px;
+  color:white;
+  background-color: #78b722;
+  border-radius: 25px;
+  border: none;
+}
+
+.cheatsheet{
+  background: #e9e2e0;
+  padding: 15px 0;
+  color: #5d3b37;
+}
+
+.command{
+  background-color: white;
+  padding: 5px;
+  font-family: Roboto Mono;
+}
+
+.download{
+  padding: 10px 20px;
+  background-color: #78b722;
+  border-radius: 25px;
+  border: none;
+  color:white;
+  margin: 0px 10px;
+}
+
+.about{
+  background-color: white;
+  padding: 15px;
+}
+
+.angleSmall{
+  float: right;
+  color: #78b722;
+  font-size: 25px;
+  margin-top: -5px;
+}
+
+.impressum{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #e9e2e0;
+  color: #5d3b37;
+}
+
+footer{
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+footer a{
+  margin-right: 15px;
+  margin-top: 15px;
+  color: #78b722;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #78b722;
+}
+
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+  .cheatsheet{
+    margin-top: 100px;
+    padding: 15px;
+  }
+
+  .download{
+    margin-top: 10px;
+  }
+}
