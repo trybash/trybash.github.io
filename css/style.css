@@ -26,8 +26,6 @@
        url('../fonts/Fira-Sans-700.svg#FiraSans') format('svg');
 }
 
-
-
 @font-face {
   font-family: 'Roboto Mono';
   font-weight: 400;
@@ -42,17 +40,17 @@
        url('../fonts/Roboto-Mono-regular.svg#RobotoMono') format('svg');
 }
 
-body{
+body {
   font-family: Fira Sans;
   background-color: white;
   height: 100%;
 }
 
-header, footer{
+header, footer {
   background-color: black;
 }
 
-.logo{
+.logo {
   float: left;
   color: #78b722;
   margin: 0px;
@@ -60,22 +58,22 @@ header, footer{
 
 }
 
-.angle{
+.angle {
   font-size: 60px;
   margin:0;
   padding: 0;
 }
 
-.try, .bash{
+.try, .bash {
   margin-top: 20px;
   font-size: 30px;
 }
 
-.bash{
+.bash {
   font-weight: bold;
 }
 
-.cover{
+.cover {
   margin-bottom: -200px;
   background-image: url("../img/titelbild-example.jpg");
   background-height: 100%;
@@ -84,46 +82,46 @@ header, footer{
   background-position: center;
 }
 
-.content{
+.content {
     background: #e9e2e0;
 }
 
-.title{
+.title {
   text-align: center;
   color:white;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-.title h1{
+.title h1 {
   font-weight: bold;
   font-size: 50px;
   text-shadow: 1px 1px #333333;
   line-height: 1;
 }
 
-.intro{
+.intro {
   background-color: white;
   border-radius: 2px;
 }
 
-.terminal{
+.terminal {
   width: 100%;
   margin-top: -200px;
   padding-bottom: 15px;
 }
 
-.gs{
+.gs {
   margin-top: 100px;
 }
 
-.intro p{
+.intro p {
   font-size: 15px;
   padding: 15px;
   text-align: center;
 }
 
-.get-started{
+.get-started {
   position: relative;
   transform: translateY(-50%);
   padding: 10px 20px;
@@ -134,19 +132,19 @@ header, footer{
   border: none;
 }
 
-.cheatsheet{
+.cheatsheet {
   background: #e9e2e0;
   padding: 15px 0;
   color: #5d3b37;
 }
 
-.command{
+.command {
   background-color: white;
   padding: 5px;
   font-family: Roboto Mono;
 }
 
-.download{
+.download {
   padding: 10px 20px;
   background-color: #78b722;
   border-radius: 25px;
@@ -155,49 +153,49 @@ header, footer{
   margin: 0px 10px;
 }
 
-.about{
+.about {
   background-color: white;
   padding: 15px;
 }
 
-.angleSmall{
+.angleSmall {
   float: right;
   color: #78b722;
   font-size: 25px;
   margin-top: -5px;
 }
 
-.impressum{
+.impressum {
   margin-top: 50px;
   margin-bottom: 50px;
   background: #e9e2e0;
   color: #5d3b37;
 }
 
-footer{
+footer {
   padding: 15px;
   padding-top: 25px;
   padding-bottom: 10px;
 }
 
-footer a{
+footer a {
   margin-right: 15px;
   margin-top: 15px;
   color: #78b722;
   text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
   color: #78b722;
 }
 
 @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-  .cheatsheet{
+  .cheatsheet {
     margin-top: 100px;
     padding: 15px;
   }
 
-  .download{
+  .download {
     margin-top: 10px;
   }
 }
