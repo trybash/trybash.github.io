@@ -50,6 +50,8 @@ header, footer{
     background-image: url("../img/titelbild-example.jpg");
     background-height: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .title{
