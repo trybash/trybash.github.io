@@ -43,15 +43,15 @@ header, footer{
 
 .cover{
   margin-bottom: -200px;
+  background-image: url("../img/titelbild-example.jpg");
+  background-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .content{
     background: #e9e2e0;
-    background-image: url("../img/titelbild-example.jpg");
-    background-height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .title{
