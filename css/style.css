@@ -40,8 +40,13 @@
        url('../fonts/Roboto-Mono-regular.svg#RobotoMono') format('svg');
 }
 
+* {
+  position: relative;
+}
+
 body {
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
+  font-size: 18px;
   background-color: white;
   height: 100%;
 }
@@ -51,30 +56,20 @@ header, footer {
 }
 
 .logo {
+  display: block;
+  max-width: 150px;
   float: left;
-  color: #78b722;
-  margin: 0px;
-  padding: 0px;
 
-}
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
 
-.angle {
-  font-size: 60px;
-  margin:0;
   padding: 0;
-}
 
-.try, .bash {
-  margin-top: 20px;
-  font-size: 30px;
-}
-
-.bash {
-  font-weight: bold;
+  color: #78b722;
 }
 
 .cover {
-  margin-bottom: -200px;
   background-image: url("../img/titelbild-example.jpg");
   background-height: 100%;
   background-repeat: no-repeat;
@@ -83,74 +78,97 @@ header, footer {
 }
 
 .content {
-    background: #e9e2e0;
+  background: #e9e2e0;
 }
 
 .title {
-  text-align: center;
-  color:white;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 0.75em;
 
-.title h1 {
+  color: white;
+  font-size: 8vw;
   font-weight: bold;
-  font-size: 50px;
-  text-shadow: 1px 1px #333333;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-shadow: 0px 5px 5px rgba(48,20,12,0.30);
   line-height: 1;
 }
 
-.intro {
-  background-color: white;
+.Game {
+  margin-bottom: -200px;
+  padding: 1em;
   border-radius: 2px;
+  background-color: white;
+  z-index: 10;
 }
 
-.terminal {
-  width: 100%;
-  margin-top: -200px;
-  padding-bottom: 15px;
+.Game-imageWrapper {
 }
 
-.gs {
-  margin-top: 100px;
-}
-
-.intro p {
-  font-size: 15px;
-  padding: 15px;
-  text-align: center;
-}
-
-.get-started {
-  position: relative;
-  transform: translateY(-50%);
-  padding: 10px 20px;
-  font-size: 20px;
-  color:white;
+.Game-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 1.5em;
+  font-size: 2em;
+  line-height: 1;
+  white-space: nowrap;
+  color: white;
   background-color: #78b722;
-  border-radius: 25px;
+  border-radius: 2em;
   border: none;
+  z-index: 10;
+}
+
+.Game-button:hover,
+.Game-button:active,
+.Game-button:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.Game-image {
+  display: block;
+  width: 100%;
+}
+
+.Game p {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  font-size: 1.25em;
+  text-align: left;
 }
 
 .cheatsheet {
   background: #e9e2e0;
-  padding: 15px 0;
   color: #5d3b37;
 }
 
 .command {
   background-color: white;
-  padding: 5px;
+  padding: 0.5em;
   font-family: Roboto Mono;
 }
 
-.download {
+.command-desc {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.Download {
+  text-align: center;
+}
+
+.Download-button {
   padding: 10px 20px;
   background-color: #78b722;
   border-radius: 25px;
   border: none;
-  color:white;
-  margin: 0px 10px;
+  color: white;
+  margin: 0 10px;
 }
 
 .about {
@@ -173,9 +191,8 @@ header, footer {
 }
 
 footer {
-  padding: 15px;
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 footer a {

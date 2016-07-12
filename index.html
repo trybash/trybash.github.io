@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>tryBash - Learn the Command Line the easy way!</title>
+  <title>TryBash - Learn the Command Line the easy way!</title>
   <meta name="description" content="Command Line Tutorial">
   <meta name="author" content="TryBash Team">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -16,85 +16,98 @@
 </head>
 
 <body>
-  <div class="container-fluid content">
-    <header class="row">
-      <div class="col-sm-3 col-sm-offset-2 header">
-        <a href="index.html">
-          <p class="logo angle">
-            >
-          </p>
-          <p class="logo try">
-            Try
-          </p>
-          <p class="logo bash">
-            Bash
-          </p>
-        </a>
+  <div class="content">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 header">
+            <a href="index.html">
+              <img src="img/logo.svg" class="logo">
+            </a>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="row cover">
-      <div class="col-sm-6 col-sm-offset-3 title">
-        <h1>Learn Bash<br />the easy way</h1>
-      </div>
-      <div class="col-sm-8 col-sm-offset-2 intro">
-        <p>
-          Take our fun, interactive course and learn the basics of the UNIX Shell in just a few minutes. Jump in right away:
-        </p>
-        <p class="gs">
-          <a href="/game">
-            <button class="get-started">Get Started!</button>
-            </a>
-        </p>
-        <img class="terminal" src="img/terminal-example.png" alt="terminal"/>
-      </div>
-    </div>
-    <div class="row cheatsheet">
-      <div class="col-sm-8 col-sm-offset-2 cheatsheet">
-        <h3>Cheat Sheet</h3>
-        <p>The shell is dark and full of terrors. Take this:</p>
-        <div class="col-sm-6">
-          <p class="command">ls</p>
-          <p class="command-desc">List all files and folders in the current directory</p>
-          <p class="command">ls foldername</p>
-          <p class="command-desc">List all files and folders in the folder named foldername</p>
-          <p class="command">ls -l</p>
-          <p class="command-desc">List all files and folders with addictional information</p>
-          <p class="command">ls -a</p>
-          <p class="command-desc">List even hidden files or folders!</p>
-          <p class="command">ls -R</p>
-          <p class="command-desc">List files,folders and all the subfolders</p>
-        </div>
-        <div class="col-sm-6">
-          <p class="command">mkdir name</p>
-          <p class="command-desc">Create a folder named name</p>
-          <p class="command">rm filename</p>
-          <p class="command-desc">Remove the file named filename</p>
-          <p class="command">and so on</p>
-          <p class="command-desc">Add more commads to Cheat Sheet</p>
-        </div>
-      </div>
 
-      <div class="col-sm-8 col-sm-offset-2 ">
-        <p>You can also download this as a PDF in different languages:</p>
-        <button class="download">Download in german</button>
-        <button class="download">Download in english</button>
+    <div class="cover">
+      <div class="container">
+        <div class="row">
+          <h1 class="title">Learn Bash<br>the easy way</h1>
+          <div class="col-sm-12 Game">
+            <p>
+              Take our fun, interactive course and learn the basics of the UNIX Shell in just a few minutes. Jump in right away:
+            </p>
+            <div class="Game-imageWrapper">
+              <a href="/game" class="Game-button">
+                Get Started!
+              </a>
+              <img class="Game-image" src="img/terminal-example.png" alt="terminal"/>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row about">
-      <div class="col-sm-8 col-sm-offset-2">
-      <h2>About TryBash:</h2>
-      <p class="desc">TryBash was initially created as a student project at the HTW Berlin. Since then, it has become a global phenomenon, with millions of people participating in the fun, interactive course. The team has since bought several mansions in Miami.</p>
-      <br />
-      <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <div class="cheatsheet">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 cheatsheet">
+            <h3>Cheat Sheet</h3>
+            <p>The shell is dark and full of terrors. Take this:</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="command">ls</p>
+                <p class="command-desc">List all files and folders in the current directory</p>
+                <p class="command">ls foldername</p>
+                <p class="command-desc">List all files and folders in the folder named foldername</p>
+                <p class="command">ls -l</p>
+                <p class="command-desc">List all files and folders with addictional information</p>
+                <p class="command">ls -a</p>
+                <p class="command-desc">List even hidden files or folders!</p>
+                <p class="command">ls -R</p>
+                <p class="command-desc">List files,folders and all the subfolders</p>
+              </div>
+              <div class="col-sm-6">
+                <p class="command">mkdir name</p>
+                <p class="command-desc">Create a folder named name</p>
+                <p class="command">rm filename</p>
+                <p class="command-desc">Remove the file named filename</p>
+                <p class="command">and so on</p>
+                <p class="command-desc">Add more commads to Cheat Sheet</p>
+              </div>
+            </div>
+
+            <div class="Download">
+              <p>You can also download this as a PDF:</p>
+              <a href="#" class="Download-button">
+                Download in English
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <footer class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-      <a href="impressum.html">Impressum & Datenschutzerklärung</a>
-      <p class="angleSmall">
-        >
-      </p>
+
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+          <h2>About TryBash:</h2>
+          <p class="desc">TryBash was initially created as a student project at the HTW Berlin. Since then, it has become a global phenomenon, with millions of people participating in the fun, interactive course. The team has since bought several mansions in Miami.</p>
+          <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="impressum.html">Impressum & Datenschutzerklärung</a>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
