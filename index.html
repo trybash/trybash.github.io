@@ -53,35 +53,235 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 cheatsheet">
-            <h3>Cheat Sheet</h3>
+            <h2>Cheat Sheet</h2>
             <p>The shell is dark and full of terrors. Take this:</p>
             <div class="row">
-              <div class="col-sm-6">
-                <p class="command">ls</p>
-                <p class="command-desc">List all files and folders in the current directory</p>
-                <p class="command">ls foldername</p>
-                <p class="command-desc">List all files and folders in the folder named foldername</p>
-                <p class="command">ls -l</p>
-                <p class="command-desc">List all files and folders with addictional information</p>
-                <p class="command">ls -a</p>
-                <p class="command-desc">List even hidden files or folders!</p>
-                <p class="command">ls -R</p>
-                <p class="command-desc">List files,folders and all the subfolders</p>
-              </div>
-              <div class="col-sm-6">
-                <p class="command">mkdir name</p>
-                <p class="command-desc">Create a folder named name</p>
-                <p class="command">rm filename</p>
-                <p class="command-desc">Remove the file named filename</p>
-                <p class="command">and so on</p>
-                <p class="command-desc">Add more commads to Cheat Sheet</p>
-              </div>
+	            <h3 class="command-category">File Navigation</h3>
+	            <div class="col-sm-12">
+	            	<div class="row">
+		            	<div class="col-sm-12 col-md-6">
+			                <p class="command left">ls</p>
+			                <p class="command-desc left">Lists the contents of directory</p>
+			            </div>
+			            <div class="col-sm-12 col-md-6">
+			                <p class="command right">ls -t</p>
+			                <p class="command-desc right">Sorts entries by time</p>
+		                </div>
+	                </div>
+	                <div class="row">
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command left">ls -a</p>
+			                <p class="command-desc left">Lists all contents, even hidden</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command right">ls -1</p>
+			                <p class="command-desc right">Forces single column output</p>
+		                </div>
+	                </div>
+	                <div class="row">
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command left">ls -h</p>
+			                <p class="command-desc left">Lists contents in human-friendly units</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command right">pwd</p>
+			                <p class="command-desc right">Shows the current working directory with full path</p>
+		                </div>
+	                </div>
+	                <div class="row">
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command left">ls -l</p>
+			                <p class="command-desc left">Displays permissions, links, owners, etc.</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command right">cd</p>
+			                <p class="command-desc right">Changes directory, "cd .." changes to parent directory. Alternatively, can enter full path, e.g. "cd /home/user1/Documents/"</p>
+		                </div>
+	                </div>
+	                <div class="row">
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command left">ls -m</p>
+			                <p class="command-desc left">Displays content in single line, separated by comma</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command right">cd d + TAB key</p>
+			                <p class="command-desc right">TAB will auto-fill IF there is a unambigous match</p>
+		                </div>
+	                </div>
+	                <div class="row">
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command left">ls -R</p>
+			                <p class="command-desc left">Lists content recursively, e.g. including content from directory</p>
+	                	</div>
+		                <div class="col-sm-12 col-md-6">
+			                <p class="command right">cd /dir</p>
+			                <p class="command-desc right">Regardless of current working dir, use will change to /dir</p>
+		                </div>
+	                </div>
+	            </div>
             </div>
-
-            <div class="Download">
+            <div class="row">
+	            <h3 class="command-category">File Manipulation</h3>
+	            <div class="col-sm-12">
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">mkdir dir1</p>
+		                	<p class="command-desc">Creates new directory</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">mv origFile newLoc</p>
+	                		<p class="command-desc">Moves file to new location</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">mkdir dir1 dir2</p>
+		                	<p class="command-desc">Creates directory, or several ones</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">mv doc1 doc2 new</p>
+	                		<p class="command-desc">Moves multiple files to new location</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cp origFil newDes</p>
+		                	<p class="command-desc">Copies file to new destination</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">mv -n doc1</p>
+	                		<p class="command-desc">Does not overwrite existing file</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cp doc1 doc2 new</p>
+		                	<p class="command-desc">Link mkdir, can copy many files at once to a destination</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">rm -R</p>
+		                	<p class="command-desc">Deletes a directory</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cp -i origFile new</p>
+		                	<p class="command-desc">interactive mode, ensures no overwrite</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">rm doc1</p>
+	                		<p class="command-desc">Deletes a file</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cp doc* dir</p>
+		                	<p class="command-desc">*wildcard copies all files that start with doc into dir</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">rmdir dirName</p>
+		                	<p class="command-desc">Also deletes a directory</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cp file *.jpg new</p>
+		                	<p class="command-desc">Copies all jpg's that start with file into new</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">rm doc1 doc2</p>
+		                	<p class="command-desc">Deletes multiple docs at once</p>
+		                </div>
+		            </div>
+	            </div>
+            </div>
+            <div class="row">
+	            <h3 class="command-category">Redirection & Pipelining</h3>
+	            <div class="col-sm-12">
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cat file</p>
+		                	<p class="command-desc">Displays content of file in the console</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">ls | sort</p>
+	                		<p class="command-desc">Pipelining, first lists then sorts</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cat doc1 > doc2</p>
+		                	<p class="command-desc">Performs like a copy, using redirection operator</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">ls /home -a sort | uniq</p>
+	                		<p class="command-desc">All unique items in home dir</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">cat doc1 » doc2 </p>
+		                	<p class="command-desc">Appends doc1 to end of doc2</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">wc file1</p>
+	                		<p class="command-desc">Word, line, and byte count of file1</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">ls -l /user/home > home.txt</p>
+		                	<p class="command-desc">Lists contents of home to home.txt</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">wc -l file1</p>
+		                	<p class="command-desc">Returns lines in file1</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">sort file1</p>
+		                	<p class="command-desc">Sorts the contents of file1 line-by-line</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">grep</p>
+	                		<p class="command-desc">Processes text line-by-line and
+prints any matching patterns</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">sort file1 > sorted</p>
+		                	<p class="command-desc">Sorted file1 content saved to sorted</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">ls dir1 | grep "zip"</p>
+		                	<p class="command-desc">Shows all zip files in our dir1 path</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">uniq file1</p>
+		                	<p class="command-desc">Filters out duplicate lines from file1</p>
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">grep -c "Error" log.txt</p>
+		                	<p class="command-desc">returns number of Error in log.txt</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12 col-md-6">
+		                	<p class="command">grep -i Error log</p>
+		                	<p class="command-desc">case insensitive search for Error in
+log</p>
+		                </div>
+		            </div>
+	            </div>
+            </div>
+            <div class="download">
               <p>You can also download this as a PDF:</p>
-              <a href="#" class="Download-button">
-                Download in English
+              <a href="tryBash_cheatsheetOne.pdf" class="download-button">
+                Download cheatsheet
               </a>
             </div>
           </div>

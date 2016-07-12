@@ -122,7 +122,14 @@ header, footer {
   z-index: 10;
 }
 
-.Game-button:hover,
+.Game-button:hover{
+  border: 1px solid #78b722;
+  color: #78b722;
+  background-color: white;
+  text-decoration: none;
+  font-size: 2.1em;
+}
+
 .Game-button:active,
 .Game-button:focus {
   color: white;
@@ -147,6 +154,11 @@ header, footer {
   color: #5d3b37;
 }
 
+.command-category, .download{
+  text-align: center;
+  margin-top: 3em;
+}
+
 .command {
   background-color: white;
   padding: 0.5em;
@@ -158,17 +170,22 @@ header, footer {
   margin-bottom: 1em;
 }
 
-.Download {
-  text-align: center;
-}
-
-.Download-button {
+.download-button, .download-button:active, .download-button:target, .download-button:focus {
   padding: 10px 20px;
   background-color: #78b722;
   border-radius: 25px;
   border: none;
   color: white;
   margin: 0 10px;
+  text-decoration: none;
+}
+
+.download-button:hover{
+  border: 1px solid #78b722;
+  background-color: white;
+  text-decoration: none;
+  color: #78b722;
+  font-size: 1.1em;
 }
 
 .about {
