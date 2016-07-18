@@ -223,6 +223,12 @@ footer a:hover {
   color: #78b722;
 }
 
+.github-link {
+  fill: #78b722;
+  top: 2px;
+  right: 2px;
+}
+
 @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
   .cheatsheet {
     margin-top: 100px;
