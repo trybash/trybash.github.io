@@ -95,6 +95,12 @@ header, footer {
   line-height: 1;
 }
 
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 90px;
+  }
+}
+
 .Game {
   margin-bottom: -200px;
   padding: 1em;
@@ -104,6 +110,7 @@ header, footer {
 }
 
 .Game-imageWrapper {
+  display: block;
 }
 
 .Game-button {
@@ -125,16 +132,6 @@ header, footer {
 .Game-button:hover{
   color: #78b722;
   background-color: white;
-  text-decoration: none;
-}
-
-.Game-button:active {
-  color: white;
-  text-decoration: none;
-}
-
-.Game-button:focus {
-  color: #78b722;
   text-decoration: none;
 }
 
@@ -229,7 +226,7 @@ footer a:hover {
   right: 2px;
 }
 
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media screen and (min-width:600px) {
   .cheatsheet {
     margin-top: 100px;
     padding: 15px;
