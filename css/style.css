@@ -118,21 +118,23 @@ header, footer {
   color: white;
   background-color: #78b722;
   border-radius: 2em;
-  border: none;
+  border: 5px solid #78b722;
   z-index: 10;
 }
 
 .Game-button:hover{
-  border: 1px solid #78b722;
   color: #78b722;
   background-color: white;
   text-decoration: none;
-  font-size: 2.1em;
 }
 
-.Game-button:active,
-.Game-button:focus {
+.Game-button:active {
   color: white;
+  text-decoration: none;
+}
+
+.Game-button:focus {
+  color: #78b722;
   text-decoration: none;
 }
 
@@ -174,18 +176,16 @@ header, footer {
   padding: 10px 20px;
   background-color: #78b722;
   border-radius: 25px;
-  border: none;
+  border: 3px solid #78b722;
   color: white;
   margin: 0 10px;
   text-decoration: none;
 }
 
 .download-button:hover{
-  border: 1px solid #78b722;
   background-color: white;
   text-decoration: none;
   color: #78b722;
-  font-size: 1.1em;
 }
 
 .about {
