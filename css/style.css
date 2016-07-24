@@ -153,13 +153,15 @@ header, footer {
   color: #5d3b37;
 }
 
-.command-category, .download{
+.command-category,
+.download {
   text-align: center;
   margin-top: 3em;
 }
 
 .command {
   background-color: white;
+  margin: 0;
   padding: 0.5em;
   font-family: Roboto Mono;
 }
@@ -167,9 +169,14 @@ header, footer {
 .command-desc {
   margin-top: 0.5em;
   margin-bottom: 1em;
+  padding-left: 0.5em;
 }
 
-.download-button, .download-button:active, .download-button:target, .download-button:focus {
+.download-button,
+.download-button:active,
+.download-button:target,
+.download-button:focus {
+  display: inline-block;
   padding: 10px 20px;
   background-color: #78b722;
   border-radius: 25px;
@@ -224,6 +231,7 @@ footer a:hover {
   fill: #78b722;
   top: 2px;
   right: 2px;
+  margin-right: 6px;
 }
 
 @media screen and (min-width:600px) {
