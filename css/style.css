@@ -45,9 +45,9 @@
 }
 
 body {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background-color: white;
+  background-color: black;
   height: 100%;
 }
 
@@ -67,6 +67,10 @@ header, footer {
   padding: 0;
 
   color: #78b722;
+}
+
+.logo-black {
+  display: none;
 }
 
 .cover {
@@ -167,7 +171,7 @@ header, footer {
 }
 
 .command-category,
-.download {
+.print {
   text-align: center;
   margin-top: 3em;
 }
@@ -185,10 +189,10 @@ header, footer {
   padding-left: 0.5em;
 }
 
-.download-button,
-.download-button:active,
-.download-button:target,
-.download-button:focus {
+.print-button,
+.print-button:active,
+.print-button:target,
+.print-button:focus {
   display: inline-block;
   padding: 10px 20px;
   background-color: #78b722;
@@ -199,7 +203,7 @@ header, footer {
   text-decoration: none;
 }
 
-.download-button:hover{
+.print-button:hover{
   background-color: white;
   text-decoration: none;
   color: #78b722;
