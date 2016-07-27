@@ -155,6 +155,11 @@ header, footer {
   color: #5d3b37;
 }
 
+.cheatsheet code {
+  white-space: nowrap;
+}
+
+
 @media screen and (min-width: 1024px) {
   .cheasheet {
     padding: 15px;
