@@ -159,6 +159,11 @@ header, footer {
   color: #5d3b37;
 }
 
+.cheatsheet-content {
+  margin-top: 7%;
+}
+
+
 .cheatsheet code {
   white-space: nowrap;
 }
