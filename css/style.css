@@ -133,7 +133,7 @@ header, footer {
   z-index: 10;
 }
 
-.Game-button:hover{
+.Game-imageWrapper:hover .Game-button {
   color: #78b722;
   background-color: white;
   text-decoration: none;
