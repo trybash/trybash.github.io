@@ -133,7 +133,7 @@ header, footer {
   z-index: 10;
 }
 
-.Game-button:hover{
+.Game-imageWrapper:hover .Game-button {
   color: #78b722;
   background-color: white;
   text-decoration: none;
@@ -158,6 +158,11 @@ header, footer {
   background: #e9e2e0;
   color: #5d3b37;
 }
+
+.cheatsheet-content {
+  margin-top: 7%;
+}
+
 
 .cheatsheet code {
   white-space: nowrap;
